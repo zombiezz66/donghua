@@ -1,0 +1,212 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 17.8rem;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.21333333rem;
+  font-family: Arial, '微软雅黑';
+  background: #a7c35f;
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+footer {
+  width: 100%;
+  height: 2.5333333333rem;
+  background: url(../img/foot.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  animation: yinyuns 2s linear 0s; }
+@keyframes yinyuns {
+  0% {
+    transform: translateX(-10.6666666667rem); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer ul li {
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 50%;
+      background: #a7c35f;
+      margin-top: 1.3333333333rem;
+      margin-left: 0.2666666667rem; }
+      footer ul li a {
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        float: left; }
+    footer ul .active {
+      width: 0.4666666667rem;
+      height: 0.2rem;
+      border-radius: 25%; }
+      footer ul .active a {
+        display: block;
+        width: 0.4666666667rem;
+        height: 0.2rem; }
+
+.yinyun {
+  width: 100%;
+  height: 1.8rem;
+  background: url(../img/yinyun.png) no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  bottom: 0.5333333333rem;
+  animation: yinyun 2s linear 0s; }
+@keyframes yinyun {
+  0% {
+    transform: translateX(10.6666666667rem); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+.zi {
+  width: 100%;
+  height: 5.0666666667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; }
+  .zi img {
+    width: 5.92rem;
+    height: 3.0133333333rem; }
+
+.tupian {
+  width: 100%;
+  height: 10.1333333333rem;
+  position: relative; }
+  .tupian .ty {
+    position: absolute;
+    left: 2.1333333333rem;
+    top: -2.24rem; }
+    .tupian .ty img {
+      width: 1.0933333333rem;
+      height: 2.24rem; }
+  .tupian .cld {
+    position: absolute;
+    left: 6.4666666667rem;
+    top: -5.0933333333rem; }
+    .tupian .cld img {
+      width: 3.44rem;
+      height: 5.0933333333rem; }
+  .tupian .tuoyuan {
+    position: absolute;
+    left: 2rem;
+    top: 3.6rem; }
+    .tupian .tuoyuan img {
+      width: 6rem;
+      height: 6rem; }
+  .tupian .tuoyuanda {
+    position: absolute;
+    left: 1.8rem;
+    top: 3.4rem; }
+    .tupian .tuoyuanda img {
+      width: 6.4rem;
+      height: 6.4rem; }
+  .tupian .qiezi {
+    position: absolute;
+    left: 2.2rem;
+    top: 5.0666666667rem;
+    z-index: 10; }
+    .tupian .qiezi img {
+      width: 1.3733333333rem;
+      height: 2.44rem; }
+  .tupian .fanqie {
+    position: absolute;
+    left: 2rem;
+    top: 6.9333333333rem;
+    z-index: 100; }
+    .tupian .fanqie img {
+      width: 1.5333333333rem;
+      height: 1.6533333333rem;
+      animation: img 1s linear 0s; }
+@keyframes img {
+  30% {
+    transform: rotate(360deg); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+  .tupian .li {
+    position: absolute;
+    left: 3.3333333333rem;
+    top: 6.1333333333rem;
+    z-index: 11; }
+    .tupian .li img {
+      width: 1.5866666667rem;
+      height: 2.2933333333rem;
+      animation: img 1s linear 0s; }
+@keyframes img {
+  30% {
+    transform: rotate(360deg); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+  .tupian .nangua {
+    position: absolute;
+    left: 4.5333333333rem;
+    top: 7.2rem;
+    z-index: 100; }
+    .tupian .nangua img {
+      width: 1.6666666667rem;
+      height: 1.56rem; }
+  .tupian .dbc {
+    position: absolute;
+    left: 4.6666666667rem;
+    top: 5.2rem;
+    z-index: 10; }
+    .tupian .dbc img {
+      width: 1.6266666667rem;
+      height: 2.7333333333rem; }
+  .tupian .ningmeng {
+    position: absolute;
+    left: 5.7333333333rem;
+    top: 7.2rem;
+    z-index: 15; }
+    .tupian .ningmeng img {
+      width: 1.56rem;
+      height: 1.52rem;
+      animation: img 1s linear 0s; }
+@keyframes img {
+  30% {
+    transform: rotate(360deg); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+  .tupian .hlb {
+    position: absolute;
+    left: 6.6666666667rem;
+    top: 4.8666666667rem;
+    z-index: 10; }
+    .tupian .hlb img {
+      width: 1.68rem;
+      height: 3.24rem; }
+  .tupian .apple {
+    position: absolute;
+    left: 6.6666666667rem;
+    top: 6.4rem;
+    z-index: 12; }
+    .tupian .apple img {
+      width: 1.48rem;
+      height: 1.84rem;
+      animation: img 1s linear 0s; }
+@keyframes img {
+  30% {
+    transform: rotate(360deg); }
+  60% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+
+/*# sourceMappingURL=first.css.map */

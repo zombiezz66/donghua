@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/second.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="JQ/jq.js"></script>
+    <title>第二页</title>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <div class="tupian">
+        <div class="tuoyuan"><img src="img/earth.png" alt=""></div>
+        <div class="tuoyuanda"><img src="img/shuipao.png" alt=""></div>
+        <div class="qiezi"><img src="img/qiezi.png" alt=""></div>
+        <div class="fanqie"><img src="img/fanqie.png" alt=""></div>
+        <div class="li"><img src="img/li.png" alt=""></div>
+        <div class="nangua"><img src="img/nangua.png" alt=""></div>
+        <div class="dbc"><img src="img/dbc.png" alt=""></div>
+        <div class="ningmeng"><img src="img/ningmeng.png" alt=""></div>
+        <div class="hlb"><img src="img/hlb.png" alt=""></div>
+        <div class="apple"><img src="img/apple.png" alt=""></div>
+        <div class="dunpai"><img src="img/dunpai.png" alt=""></div>
+    </div>
+    <div class="zi">
+        <img src="img/zi2.png" alt="">
+    </div>
+    <div class="yinyun">
+        
+    </div>
+    <footer>
+        <ul>
+            <li><a href="first.html"></a></li>
+            <li class="active"><a href="second.html"></a></li>
+            <li><a href="third.html"></a></li>
+            <li><a href="last.html"></a></li>
+        </ul>
+    </footer>
+</body>
+<script>
+    $(".zi").ready(function() {
+                    $(".zi").animate({opacity:"1"},1500); //隐藏
+                });
+    $("footer").ready(function() {
+                    $("footer").animate({marginLeft:"0px"},900);
+                });
+    $(".yinyun").ready(function() {
+                        $(".yinyun").animate({marginLeft:"0px"},900);
+                    });               
+$(".dunpai").hide().addClass("animated flip").show()
+$(".tuoyuanda").css({
+    animation: "fadeIn 1s 0s"
+})
+$(".nangua,.apple,.li,.fanqie,.dbc,.hlb,.qiezi,.ningmeng").css({
+    animation: "jackInTheBox 1s 0s"
+})
+</script>
+</html>
